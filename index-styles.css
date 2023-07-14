@@ -1,0 +1,48 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    column-gap: 120px;
+    column-rule: 5px solid #dbdbdb;
+    font-family: 'DM Sans';
+}
+.box {
+    float: left;
+    width: 50%;
+    flex: 50%;
+}
+#left {
+    grid-column: 1;
+    height: 100%;
+    width: 100%;
+    padding-top: 25px;
+    margin-left: 5%;
+}
+
+#right {
+    grid-column: 2;
+    height: 100%;
+    width: 100%;
+    padding-top: 25px;
+}
+form input,
+form label {
+    box-sizing: border-box;
+    display: block;
+    margin: 25px 0;
+    width: 100%;
+    scroll-margin-right: 75%;
+}
+body {
+    column-rule: 5px solid #dbdbdb
+}
+h1 {
+    text-align: center;
+    font-family: 'Playfair Display' serif;
+}
+h2 {
+    text-align: center;
+    font-family: 'DM Sans';
+}
+footer {
+    text-align: center;
+}
