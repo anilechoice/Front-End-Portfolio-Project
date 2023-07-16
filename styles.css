@@ -4,6 +4,7 @@ html, body {
     text-align: center;
     align-items: center;
     background-color: lightgrey;
+    color: black;
 
 }
 form input,
@@ -30,6 +31,10 @@ h2 {
     font-family: 'Playfair Display';
 }
 footer {
+    font-family: 'DM Sans';
     background-color: lightgrey;
     padding: 10px;
+}
+a {
+    color: black;
 }

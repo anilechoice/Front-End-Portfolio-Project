@@ -13,31 +13,33 @@
 
     <body>
         <header>
-           <h1>Business In One Place</h1>
+           <h1>The Business In One Place</h1>
            <h2>Need a New Article to Indulge? Get A Randomized One Here!</h2>
         </header>
         <section class="container">
             <div class="box" id="left">
-                <section class="saved-news">
-
+                <section class="saved-news" data-article-card-container>
+                <template id="article-template" >
                     <img
-                        id="img"
+                        id="img" data-img
                     />
-                    <h3 id="title"></h3>
-                    <h4 id=""></h4>
+                    <h3 id="title" data-title></h3>
+                    <h4 id="news-outlet" data-outlet></h4>
+                    <a href=""></a>
+                </template >    
                 </section>
             </div>
             <div class="box" id="right">
                 <form action="news-search">
-                    <h3>Search by New Outlet, Author, or Title</h3>
+                    <h3></h3>
                     <label for="news-outlet"> News Outlet </label>
-                    <input id="news-outlet" name="news-outlet" type="text">
+                    <input id="news-outlet" name="news-outlet" type="text" data-search>
                     <label for="author"> Author </label>
-                    <input id="author" name="author" type="text">
+                    <input id="author" name="author" type="text" data-search>
                     <label for="title"> Title </label>
-                    <input for="title" name="title" type="text">
+                    <input for="title" name="title" type="text" data-search>
                     <button type="reset">Reset</button>
-                    <button type="submit">submit</button>
+                    <button type="submit" id="submit">Submit</button>
                 </form>
             </div>
         </section>

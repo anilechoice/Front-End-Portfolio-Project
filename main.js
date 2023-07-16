@@ -1,22 +1,20 @@
-url = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=d924b68639f044a1b31eeff37055b6ca"
+url = 'https://newsapi.org/v2/top-headlines?' + 'country=us&category=business'+ 'apiKey=d924b68639f044a1b31eeff37055b6ca'
 
-const image = document.getElementById("img")
-const title = document.getElementById("title")
-const author = document.getElementById("author")
-const newsOutlet = document.getElementById("news-outlet");
-const link = document.getElementById("link")
+articleTemplate = document.getElementById("article-template")
+button.addEventListener("click", (e) => {
 
-
-button.addEventListener("click", function() {
-    fetch(url)
+fetch(url)
     .then(data => data.json())
-    .then(json => newsSearch(json))
-    .catch(err => alert("request failed", err));
+    .then(json => getArticle(json))
+    .catch(err => alert('request failed', err))
 });
 
-newsSearch = (json) => {
-    const article = json.title[0];
-    for (let key in title) {
-        if ()
-    }
+const getArticle = (json) => {
+    articleTemplate.innerHTML = 
+    `<template id="article-template" >
+    <img src="${json.article.urlToImage}"/>
+    <h3> ${json.article.title} </h3>
+    <h4> ${json.article.source.name} </h4>
+    <a href="${json.article.url}"></a>
+</template >`
 }

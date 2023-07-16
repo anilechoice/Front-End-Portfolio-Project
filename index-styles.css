@@ -2,13 +2,18 @@
     display: grid;
     grid-template-columns: 1fr, 1fr;
     column-gap: 120px;
-    column-rule: 5px solid #dbdbdb;
     font-family: 'DM Sans';
+    column-rule: 10px solid #000000;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .box {
     float: left;
     width: 50%;
     flex: 50%;
+}
+header {
+    font-family: 'playfair display';
 }
 #left {
     grid-column: 1;
@@ -24,6 +29,12 @@
     width: 100%;
     padding-top: 25px;
 }
+/* #news-outlet, 
+#author,
+#title {
+    width: 500px;
+} */
+
 form input,
 form label {
     box-sizing: border-box;
@@ -37,12 +48,18 @@ body {
 }
 h1 {
     text-align: center;
-    font-family: 'Playfair Display' serif;
 }
 h2 {
     text-align: center;
     font-family: 'DM Sans';
 }
 footer {
+    font-family: 'DM Sans';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     text-align: center;
+}
+a {
+    color: grey;
 }
