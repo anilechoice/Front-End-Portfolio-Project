@@ -1,4 +1,4 @@
-const form = document.querySelector("log-in");
+const form = document.querySelector("registration");
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -18,4 +18,10 @@ form.addEventListener("submit", (e) => {
     generateUserCard(firstName, lastName, email, password);
 
     form.reset();
+    if (!password == repeatPassword) {
+        alert("Passwords do not match. Please retry")
+    }
+    else {
+        alert("You are registered. Welcome to The Business!")
+    }
 })
