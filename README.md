@@ -5,4 +5,11 @@ For this, I worked from the front-end to the back-end. First, I completed my htm
 
 After I completed the HTMLs, I moved to the CSS files. The log in and registration pages share a CSS file and I completed a seperate one for the search page. I decided to go with a clean, neutral aesthetic for the page, being that it's for business articles. In addtion, I used Google fonts to find the two fonts on the three pages. I kept it extremely simple as most business webpages are and I wanted this project to be a genuine reflection of that is out there.
 
-Lastly, I worked through the Javascript. I decided to do a search with the API.
+Lastly, I worked through the Javascript. I decided to do a search with the API. The search s through the available news outlets, and returns the articles that match the search key entered by the user. Possible searches include:
+- CNN
+- CNBC
+- Euronews
+- Associated Press
+- Fox Business
+
+https://anilechoice.github.io/Front-End-Portfolio-Project/

@@ -1,17 +1,18 @@
-.container {
-    display: grid;
-    grid-template-columns: 1fr, 1fr;
-    column-gap: 120px;
-    font-family: 'DM Sans';
-    column-rule: 10px solid #000000;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.box {
-    float: left;
-    width: 50%;
-    flex: 50%;
-}
+ @media (min-width: 800px) {
+ .container {
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        column-gap: 120px;
+        font-family: 'DM Sans';
+        column-rule: 10px solid #000000;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .box {
+        float: left;
+        width: 50%;
+        flex: 50%;
+    }
 header {
     font-family: 'playfair display';
 }
@@ -20,7 +21,7 @@ header {
     height: 100%;
     width: 100%;
     padding-top: 25px;
-    margin-left: 5%;
+    /*margin-left: 5%;*/
 }
 
 #right {
@@ -29,11 +30,7 @@ header {
     width: 100%;
     padding-top: 25px;
 }
-/* #news-outlet, 
-#author,
-#title {
-    width: 500px;
-} */
+
 
 form input,
 form label {
@@ -42,6 +39,7 @@ form label {
     margin: 25px 0;
     width: 100%;
     scroll-margin-right: 75%;
+    font-family: 'DM Sans';
 }
 body {
     column-rule: 5px solid #dbdbdb
@@ -55,11 +53,102 @@ h2 {
 }
 footer {
     font-family: 'DM Sans';
-    position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
 }
 a {
     color: grey;
+}
+img {
+    width: 400px;
+    margin: auto
+}
+form button [type="submit"],
+button {
+    background: gray;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: 10px 5px;
+    font-family: 'DM Sans';
+    padding: 10px
+}
+form input {
+    border: 1px solid;
+    padding: 8px
+}
+form button[type="submit"]:hover,
+button:hover {
+    background: slategray;
+}
+.news-search-form {
+    font-family:'DM Sans' ;
+}
+}
+@media (max-width: 799px) and (min-width: 400px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 120px;
+        font-family: 'DM Sans';
+        column-rule: 10px solid #000000;
+    }
+header {
+    font-family: 'playfair display';
+}
+
+
+
+form input,
+form label {
+    box-sizing: border-box;
+    display: block;
+    margin: 25px 0;
+    width: 100%;
+    scroll-margin-right: 75%;
+    font-family: 'DM Sans';
+}
+body {
+    column-rule: 5px solid #dbdbdb
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    font-family: 'DM Sans';
+}
+footer {
+    font-family: 'DM Sans';
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+a {
+    color: grey;
+}
+img {
+    width: 400px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+form button [type="submit"],
+button {
+    background: gray;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: 10px 5px;
+    font-family: 'DM Sans';
+    padding: 10px
+}
+.news-search-form {
+    font-family:'DM Sans' ;
+}
+form button[type="submit"]:hover,
+button:hover {
+    background: slategray;
+}
 }
